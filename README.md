@@ -76,13 +76,25 @@ To support your own emulator edit Makefile change **EMULATOR = fceux** to **EMUL
 **6)NES-Sprite-Convertor:** For converting resources PNG/BMP to CHR.<br/>
 Most of these tools can be found under _tools_ directory.<br/>
 
+## New tools and utilities.
+
+To create this game i had to create some of my own tools so i created some tools/utils and helper library.
+
+**1)Tiled export plugins:** Helps you to export map created in Tiled to C-File or Assembly file directly.<br/>
+Check Scripts/Tiled folder for ExportCpp and ExportAsm plugins.<br/>
+
+**2)NES-Clib:** A custom helper library to load HUD and title/intros and randomize palette and more.<br/>
+Check **_lib/nesclib.h_** and **_lib/nesclib.s_**<br/>
+
+**3)Meta-tiles convertor:** Converts meta-tiles to c code (Originated by NesDoug).<br/>
+Check **utils/meta2c.exe** for source check **utils/meta2c.c**<br/>
 
 ## NESDev open-source community Contribution list :<br/>
 **1)Shiru:** For contributing to various libraries/tools to open-source community. <br/>
 **Work:** Neslib,Famitone2,NESst,Space Checker,Sort and more. [Check Website](http://shiru.untergrund.net/software.shtml)
 
 **2)NESDoug:** For contributing to various tutorials/tools to open-source community. <br/>
-**Work:** Open source Platformer games and Utils Nesdoug.h. [Check Website](https://nesdoug.com/l)
+**Work:** Open source Platformer games and Utils Nesdoug.h [Check Website](https://nesdoug.com/l)
 
 **3)Mojontwins:** For contributing to various games/tools [Game engine for C](https://github.com/mojontwins/MK1_NES) to open-source community.<br/> 
 **Work:** MK1_NES Game engine,Super Uwol,cheril_perils,sgt_helmet, and tools like mkts,eneexp3,rle44mapMK1 etc. [Check Website](https://www.mojontwins.com/)<br/>
