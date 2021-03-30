@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            //NES Compile task arg is file name with path.
+            "label": "NES Compile",
+            "type": "process",
+            "command": "BuildGame.bat",
+            "args": [
+                "${file}","fceux"
+            ],
+            "options": {
+                "cwd": "${fileWorkspaceFolder}"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "never"
+            },
+            "problemMatcher": []
+        },
+    ],
+}

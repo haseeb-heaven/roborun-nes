@@ -1,0 +1,10 @@
+#include "..\lib\nesclib.h"
+#include "..\gfx\gfx_all.h"
+#include "player.h"
+#include "enemy.h"
+#include "collectables.h"
+#include "collision.h"
+#include "generic.h"
+#include "constants.h"
+#include "levels.h"
+

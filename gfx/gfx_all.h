@@ -1,0 +1,6 @@
+#include "..\gfx/metasprite.h"
+#include "..\gfx/game_title.h"
+#include "..\gfx/level_clear.h"
+#include "..\gfx/game_over.h"
+#include "..\gfx/game_levels.h"
+#include "..\gfx/game_help_title.h"

@@ -1,0 +1,18 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "F4",
+        "command": "workbench.action.tasks.runTask",
+        "args": "NES Compile"
+    },
+    {
+        "key": "F2",
+        "command": "workbench.action.tasks.runTask",
+        "args": "NES-Build-Make"
+    },
+    {
+        "key": "F3",
+        "command": "workbench.action.tasks.runTask",
+        "args": "NES-Build-Clean"
+    }
+]
