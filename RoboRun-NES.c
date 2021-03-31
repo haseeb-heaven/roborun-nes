@@ -152,7 +152,7 @@ void main()
                 old_stars = stars;
                 old_coins = coins;
             }
-            
+
             //Player win state.
             if (coins == max_coins && score > 0)
             {

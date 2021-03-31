@@ -18,20 +18,20 @@ Uses structures for Player/Enemy/Collectables instead plain c-array/vars.<br/>
 All libraries used are well documented.<br/>
 
 ## Game title : <br/>
-![](https://github.com/haseeb-heaven/JumPYMan-Game/blob/master/screenshots/game_title.png?raw=true "")<br/>
+![](https://github.com/haseeb-heaven/JumPYMan-Game/blob/master/res/game_title.png?raw=true "")<br/>
 
 ## Game Help : <br/>
-![](https://github.com/haseeb-heaven/JumPYMan-Game/blob/master/screenshots/game_help.png?raw=true "")<br/>
+![](https://github.com/haseeb-heaven/JumPYMan-Game/blob/master/res/game_help.png?raw=true "")<br/>
 
 ## Game Total Score : <br/>
-![](https://github.com/haseeb-heaven/JumPYMan-Game/blob/master/screenshots/game_over.png?raw=true "")<br/>
+![](https://github.com/haseeb-heaven/JumPYMan-Game/blob/master/res/game_over.png?raw=true "")<br/>
 
 ## Gameplay levels : <br/>
-![](https://github.com/haseeb-heaven/JumPYMan-Game/blob/master/screenshots/game_level_1.png?raw=true "")<br/>
-![](https://github.com/haseeb-heaven/JumPYMan-Game/blob/master/screenshots/game_level_2.png?raw=true "")<br/>
-![](https://github.com/haseeb-heaven/JumPYMan-Game/blob/master/screenshots/game_level_3.png?raw=true "")<br/>
+![](https://github.com/haseeb-heaven/JumPYMan-Game/blob/master/res/game_level_1.png?raw=true "")<br/>
+![](https://github.com/haseeb-heaven/JumPYMan-Game/blob/master/res/game_level_2.png?raw=true "")<br/>
+![](https://github.com/haseeb-heaven/JumPYMan-Game/blob/master/res/game_level_3.png?raw=true "")<br/>
 ## Final level : <br/>
-![](https://github.com/haseeb-heaven/JumPYMan-Game/blob/master/screenshots/game_level_5.png?raw=true "")<br/>
+![](https://github.com/haseeb-heaven/JumPYMan-Game/blob/master/res/game_level_5.png?raw=true "")<br/>
 
 ## Directory Structure :
 **build** - Contains final build of game along source code in assembly.<br/>

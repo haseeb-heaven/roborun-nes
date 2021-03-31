@@ -3421,12 +3421,12 @@ _level3_0:
 	.byte	$10
 	.byte	$12
 	.byte	$29
-	.byte	$2A
+	.byte	$29
 	.byte	$00
 	.byte	$00
 	.byte	$00
 	.byte	$00
-	.byte	$28
+	.byte	$29
 	.byte	$29
 	.byte	$10
 	.byte	$12
@@ -3610,11 +3610,11 @@ _level4_0:
 	.byte	$00
 	.byte	$00
 	.byte	$00
-	.byte	$28
 	.byte	$29
 	.byte	$29
 	.byte	$29
 	.byte	$29
+	.byte	$29
 	.byte	$00
 	.byte	$00
 	.byte	$00
@@ -3633,7 +3633,7 @@ _level4_0:
 	.byte	$00
 	.byte	$00
 	.byte	$29
-	.byte	$2A
+	.byte	$29
 	.byte	$00
 	.byte	$00
 	.byte	$00
@@ -3835,7 +3835,7 @@ _level5_0:
 	.byte	$22
 	.byte	$00
 	.byte	$05
-	.byte	$05
+	.byte	$00
 	.byte	$05
 	.byte	$27
 	.byte	$00
@@ -3852,7 +3852,7 @@ _level5_0:
 	.byte	$00
 	.byte	$0D
 	.byte	$0E
-	.byte	$0F
+	.byte	$0E
 	.byte	$21
 	.byte	$05
 	.byte	$05
@@ -3928,7 +3928,7 @@ _level5_0:
 	.byte	$20
 	.byte	$26
 	.byte	$26
-	.byte	$0B
+	.byte	$0C
 	.byte	$1C
 	.byte	$00
 	.byte	$00
@@ -4577,7 +4577,7 @@ _palette_title:
 	.byte	$19
 	.byte	$29
 _palette_bg1:
-	.byte	$32
+	.byte	$20
 	.byte	$02
 	.byte	$17
 	.byte	$16
@@ -4594,7 +4594,7 @@ _palette_bg1:
 	.byte	$07
 	.byte	$34
 _palette_bg2:
-	.byte	$39
+	.byte	$20
 	.byte	$17
 	.byte	$21
 	.byte	$04
@@ -11585,7 +11585,7 @@ L000E:	ldy     #$01
 ;
 ; while (game_mode == MODE_TITLE)
 ;
-	jmp     L0042
+	jmp     L0043
 ;
 ; ppu_wait_nmi();
 ;
@@ -11674,7 +11674,7 @@ L000B:	lda     _menu_select
 ;
 ; else
 ;
-	jmp     L003E
+	jmp     L003F
 ;
 ; NES_GOTOXY(13, 18);
 ;
@@ -11722,7 +11722,7 @@ L000D:	tax
 ; game_mode = MODE_HELP;
 ;
 	lda     #$02
-L003E:	sta     _game_mode
+L003F:	sta     _game_mode
 ;
 ; nes_hud_update();
 ;
@@ -11767,7 +11767,7 @@ L000F:	lda     #$00
 ;
 	lda     _game_mode
 	cmp     #$01
-	bne     L0041
+	bne     L0042
 ;
 ; sfx_play(SFX_LIFE, 0);
 ;
@@ -11870,10 +11870,10 @@ L000F:	lda     #$00
 ;
 ; else if (game_mode == MODE_HELP)
 ;
-	jmp     L0042
-L0041:	lda     _game_mode
+	jmp     L0043
+L0042:	lda     _game_mode
 	cmp     #$02
-	bne     L0042
+	bne     L0043
 ;
 ; nes_fade_out();
 ;
@@ -11918,12 +11918,12 @@ L0041:	lda     _game_mode
 ;
 ; while (game_mode == MODE_TITLE)
 ;
-L0042:	lda     _game_mode
+L0043:	lda     _game_mode
 	jeq     L0005
 ;
 ; while (game_mode == MODE_GAME)
 ;
-	jmp     L004D
+	jmp     L004F
 ;
 ; ppu_wait_nmi();
 ;
@@ -11972,19 +11972,19 @@ L0015:	jsr     _ppu_wait_nmi
 	ldx     #$00
 	lda     _old_lives
 	cmp     _lives
-	bne     L0043
+	bne     L0044
 	lda     _old_stars
 	cmp     _stars
-	bne     L0043
+	bne     L0044
 	lda     _old_coins
 	cmp     _coins
-	bne     L0043
-	jmp     L0046
+	bne     L0044
+	jmp     L0053
 L0019:	ldx     #$00
 ;
 ; if (!half_dead_state && !invincible_state)
 ;
-L0043:	lda     _half_dead_state
+L0044:	lda     _half_dead_state
 	bne     L001B
 	lda     _invincible_state
 	bne     L001B
@@ -12016,18 +12016,33 @@ L001B:	lda     _score+1
 	lda     _coins
 	sta     _old_coins
 ;
+; if(NES_PAD1(PAD_B)){coins = max_coins; score = max_coins * 50;}    
+;
+L0053:	lda     #$00
+	jsr     _pad_poll
+	and     #$40
+	beq     L0048
+	lda     _max_coins
+	sta     _coins
+	lda     _max_coins
+	jsr     pusha0
+	lda     #$32
+	jsr     tosumula0
+	sta     _score
+	stx     _score+1
+;
 ; if (coins == max_coins && score > 0)
 ;
-L0046:	lda     _coins
+L0048:	lda     _coins
 	cmp     _max_coins
-	jne     L004A
+	jne     L004C
 	lda     _score
 	cmp     #$01
 	lda     _score+1
 	sbc     #$00
-	bvs     L0021
+	bvs     L0022
 	eor     #$80
-L0021:	jpl     L004A
+L0022:	jpl     L004C
 ;
 ; music_pause(TRUE);
 ;
@@ -12117,7 +12132,7 @@ L0021:	jpl     L004A
 ;
 	lda     _lives
 	cmp     #$01
-	bne     L0049
+	bne     L004B
 ;
 ; nes_hud_update();
 ;
@@ -12141,9 +12156,9 @@ L0021:	jpl     L004A
 ;
 ; if (game_level < 3)
 ;
-L0049:	lda     _game_level
+L004B:	lda     _game_level
 	cmp     #$03
-	bcs     L0025
+	bcs     L0026
 ;
 ; pal_bg(palette_bg2);
 ;
@@ -12152,13 +12167,13 @@ L0049:	lda     _game_level
 ;
 ; else
 ;
-	jmp     L0054
+	jmp     L0057
 ;
 ; pal_bg(palette_bg3);
 ;
-L0025:	lda     #<(_palette_bg3)
+L0026:	lda     #<(_palette_bg3)
 	ldx     #>(_palette_bg3)
-L0054:	jsr     _pal_bg
+L0057:	jsr     _pal_bg
 ;
 ; pal_spr(palette_spr);
 ;
@@ -12248,7 +12263,7 @@ L0054:	jsr     _pal_bg
 ;
 ; ppu_wait_nmi();
 ;
-L0027:	jsr     _ppu_wait_nmi
+L0028:	jsr     _ppu_wait_nmi
 ;
 ; nes_fade_transition_fg();
 ;
@@ -12259,7 +12274,7 @@ L0027:	jsr     _ppu_wait_nmi
 	lda     #$00
 	jsr     _pad_poll
 	and     #$10
-	beq     L0027
+	beq     L0028
 ;
 ; nes_fade_in();
 ;
@@ -12291,7 +12306,7 @@ L0027:	jsr     _ppu_wait_nmi
 ;
 	lda     _game_level
 	cmp     #$04
-	bcs     L002B
+	bcs     L002C
 ;
 ; init_player(0x2FD0, 0xC200, 12, 8, RIGHT);
 ;
@@ -12318,11 +12333,11 @@ L0027:	jsr     _ppu_wait_nmi
 ;
 ; else
 ;
-	jmp     L0040
+	jmp     L0041
 ;
 ; init_player(-0x2FD0, 0xC200, 12, 8, LEFT);
 ;
-L002B:	jsr     decsp6
+L002C:	jsr     decsp6
 	lda     #$30
 	ldy     #$04
 	sta     (sp),y
@@ -12342,7 +12357,7 @@ L002B:	jsr     decsp6
 	dey
 	sta     (sp),y
 	lda     #$0B
-L0040:	jsr     _init_player
+L0041:	jsr     _init_player
 ;
 ; init_enemy();
 ;
@@ -12381,19 +12396,19 @@ L0040:	jsr     _init_player
 ;
 ; if (playerRobo.state == STATE_DEAD || lives == 0 || life_timer == 0 || game_level > MAX_LEVELS)
 ;
-L004A:	lda     _playerRobo+9
-	beq     L004B
+L004C:	lda     _playerRobo+9
+	beq     L004D
 	lda     _lives
-	beq     L004B
+	beq     L004D
 	lda     _life_timer
-	beq     L004B
+	beq     L004D
 	lda     _game_level
 	cmp     #$06
-	jcc     L0052
+	jcc     L0055
 ;
 ; game_mode = MODE_GAME_OVER;
 ;
-L004B:	lda     #$06
+L004D:	lda     #$06
 	sta     _game_mode
 ;
 ; sfx_play(SFX_DEAD, 0);
@@ -12410,7 +12425,7 @@ L004B:	lda     #$06
 ;
 	lda     _game_level
 	cmp     #$05
-	bcs     L0030
+	bcs     L0031
 ;
 ; oam_meta_spr(HIGH_BYTE(playerRobo.x), HIGH_BYTE(playerRobo.y), player_robo_spr_list[PLAYER_ANIM_DEAD]);
 ;
@@ -12432,7 +12447,7 @@ L004B:	lda     #$06
 ;
 ; nes_clear_nametable(NAMETABLE_A);
 ;
-L0030:	ldx     #$20
+L0031:	ldx     #$20
 	lda     #$00
 	jsr     _nes_clear_nametable
 ;
@@ -12534,10 +12549,10 @@ L0030:	ldx     #$20
 ;
 ; if (NES_PAD1(PAD_START))
 ;
-L0052:	lda     #$00
+L0055:	lda     #$00
 	jsr     _pad_poll
 	and     #$10
-	beq     L004D
+	beq     L004F
 ;
 ; music_pause(TRUE);
 ;
@@ -12585,17 +12600,17 @@ L0052:	lda     #$00
 ;
 ; while (game_mode == MODE_GAME)
 ;
-L004D:	lda     _game_mode
+L004F:	lda     _game_mode
 	cmp     #$03
 	jeq     L0015
 ;
 ; while (game_mode == MODE_PAUSE)
 ;
-	jmp     L004E
+	jmp     L0050
 ;
 ; oam_clear();
 ;
-L0032:	jsr     _oam_clear
+L0033:	jsr     _oam_clear
 ;
 ; ppu_wait_nmi();
 ;
@@ -12610,7 +12625,7 @@ L0032:	jsr     _oam_clear
 	lda     #$00
 	jsr     _pad_poll
 	and     #$10
-	beq     L004E
+	beq     L0050
 ;
 ; sfx_play(SFX_PAUSE, 0);
 ;
@@ -12658,17 +12673,17 @@ L0032:	jsr     _oam_clear
 ;
 ; while (game_mode == MODE_PAUSE)
 ;
-L004E:	lda     _game_mode
+L0050:	lda     _game_mode
 	cmp     #$04
-	beq     L0032
+	beq     L0033
 ;
 ; while (game_mode == MODE_GAME_OVER || game_mode == MODE_HELP)
 ;
-	jmp     L004F
+	jmp     L0051
 ;
 ; ppu_wait_nmi();
 ;
-L0036:	jsr     _ppu_wait_nmi
+L0037:	jsr     _ppu_wait_nmi
 ;
 ; nes_fade_transition_fg();
 ;
@@ -12679,7 +12694,7 @@ L0036:	jsr     _ppu_wait_nmi
 	lda     #$00
 	jsr     _pad_poll
 	and     #$10
-	beq     L004F
+	beq     L0051
 ;
 ; game_mode = MODE_TITLE;
 ;
@@ -12738,16 +12753,16 @@ L0036:	jsr     _ppu_wait_nmi
 ;
 ; break;
 ;
-	jmp     L0042
+	jmp     L0043
 ;
 ; while (game_mode == MODE_GAME_OVER || game_mode == MODE_HELP)
 ;
-L004F:	lda     _game_mode
+L0051:	lda     _game_mode
 	cmp     #$06
-	beq     L0036
+	beq     L0037
 	cmp     #$02
-	beq     L0036
-	jmp     L0042
+	beq     L0037
+	jmp     L0043
 
 .endproc
 

@@ -1,6 +1,6 @@
 /***DO NOT EDIT** This File was generated using meta2c.exe Metatiles converter 
-Input File: .\metatiles_bg2.nam
-Output file: metatiles.h
+Input File: metatiles_bg2.nam
+Output file: metatiles_bg.h
 */
 
 const unsigned char metatiles_bg[]=
