@@ -128,6 +128,10 @@
 	.export		_level4_list
 	.export		_level5_0
 	.export		_level5_list
+	.export		_level6_0
+	.export		_level6_list
+	.export		_level7_0
+	.export		_level7_list
 	.export		_level_list
 	.export		_game_help_title
 	.export		_enemy_direction
@@ -3741,6 +3745,249 @@ _level5_0:
 	.byte	$00
 	.byte	$00
 	.byte	$00
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$00
+	.byte	$20
+	.byte	$21
+	.byte	$21
+	.byte	$21
+	.byte	$21
+	.byte	$21
+	.byte	$21
+	.byte	$21
+	.byte	$21
+	.byte	$21
+	.byte	$21
+	.byte	$21
+	.byte	$21
+	.byte	$20
+	.byte	$21
+	.byte	$22
+_level5_list:
+	.addr	_level5_0
+_level6_0:
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
 	.byte	$06
 	.byte	$00
 	.byte	$06
@@ -3965,14 +4212,259 @@ _level5_0:
 	.byte	$01
 	.byte	$01
 	.byte	$01
-_level5_list:
-	.addr	_level5_0
+_level6_list:
+	.addr	_level6_0
+_level7_0:
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$09
+	.byte	$27
+	.byte	$27
+	.byte	$0A
+	.byte	$00
+	.byte	$00
+	.byte	$20
+	.byte	$21
+	.byte	$22
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$05
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$20
+	.byte	$21
+	.byte	$21
+	.byte	$21
+	.byte	$21
+	.byte	$22
+	.byte	$00
+	.byte	$00
+	.byte	$13
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$09
+	.byte	$0A
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$13
+	.byte	$00
+	.byte	$00
+	.byte	$09
+	.byte	$0A
+	.byte	$09
+	.byte	$0A
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$0E
+	.byte	$0E
+	.byte	$27
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$27
+	.byte	$03
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$20
+	.byte	$21
+	.byte	$22
+	.byte	$00
+	.byte	$00
+	.byte	$27
+	.byte	$00
+	.byte	$03
+	.byte	$0E
+	.byte	$0E
+	.byte	$00
+	.byte	$00
+	.byte	$20
+	.byte	$21
+	.byte	$21
+	.byte	$21
+	.byte	$21
+	.byte	$22
+	.byte	$00
+	.byte	$00
+	.byte	$0B
+	.byte	$27
+	.byte	$0C
+	.byte	$21
+	.byte	$05
+	.byte	$05
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$27
+	.byte	$27
+	.byte	$27
+	.byte	$00
+	.byte	$21
+	.byte	$21
+	.byte	$29
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$27
+	.byte	$29
+	.byte	$29
+	.byte	$29
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$05
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$05
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$09
+	.byte	$0A
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$05
+	.byte	$23
+	.byte	$24
+	.byte	$25
+	.byte	$1E
+	.byte	$05
+	.byte	$00
+	.byte	$00
+	.byte	$20
+	.byte	$26
+	.byte	$09
+	.byte	$0A
+	.byte	$1C
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$1E
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$00
+	.byte	$1E
+	.byte	$00
+	.byte	$20
+	.byte	$26
+	.byte	$0E
+	.byte	$09
+	.byte	$0A
+	.byte	$03
+	.byte	$22
+	.byte	$00
+	.byte	$00
+	.byte	$0D
+	.byte	$0E
+	.byte	$0E
+	.byte	$0E
+	.byte	$0F
+	.byte	$01
+	.byte	$01
+	.byte	$01
+	.byte	$01
+	.byte	$0E
+	.byte	$0E
+	.byte	$01
+	.byte	$01
+	.byte	$01
+	.byte	$01
+	.byte	$01
+_level7_list:
+	.addr	_level7_0
 _level_list:
 	.addr	_level1_0
 	.addr	_level2_0
 	.addr	_level3_0
 	.addr	_level4_0
 	.addr	_level5_0
+	.addr	_level6_0
+	.addr	_level7_0
 _game_help_title:
 	.byte	$05
 	.byte	$72
@@ -4671,7 +5163,7 @@ _is_solid:
 	.byte	$40
 	.byte	$40
 	.byte	$40
-S0016:
+S0017:
 	.byte	$25,$63,$25,$63,$25,$30,$2E,$32,$64,$25,$63,$25,$64,$20,$20,$20
 	.byte	$20,$25,$63,$25,$63,$25,$30,$2E,$32,$64,$20,$20,$20,$20,$25,$63
 	.byte	$25,$63,$25,$30,$2E,$32,$64,$20,$20,$20,$20,$25,$63,$25,$63,$25
@@ -4686,27 +5178,29 @@ S0003	:=	S0001+0
 S0004:
 	.byte	$50,$4C,$45,$41,$53,$45,$20,$53,$57,$49,$54,$43,$48,$20,$54,$4F
 	.byte	$20,$4E,$54,$53,$43,$00
-S0015:
+S0016:
 	.byte	$20,$20,$20,$20,$20,$20,$20,$20,$20,$20,$20,$20,$20,$20,$00
-S0014:
+S0015:
 	.byte	$47,$41,$4D,$45,$20,$50,$41,$55,$53,$45,$44,$00
+S0011:
+	.byte	$42,$4F,$4E,$55,$53,$20,$4C,$45,$56,$45,$4C,$00
 S0008:
 	.byte	$25,$63,$25,$63,$25,$30,$2E,$32,$64,$20,$00
 S0009	:=	S0008+0
-S0013:
+S0014:
 	.byte	$25,$30,$2E,$32,$64,$00
-S0010	:=	S0013+0
+S0010	:=	S0014+0
 S000F:
 	.byte	$25,$30,$2E,$35,$64,$00
-S0012	:=	S000F+0
-S000D:
+S0013	:=	S000F+0
+S000B:
 	.byte	$25,$63,$25,$63,$00
-S000C	:=	S000D+0
-S000A	:=	S000D+0
-S000B	:=	S000D+0
-S000E	:=	S000D+2
-S0017	:=	S000D+2
-S0011	:=	S000D+2
+S000D	:=	S000B+0
+S000A	:=	S000B+0
+S000C	:=	S000B+0
+S000E	:=	S000B+2
+S0018	:=	S000B+2
+S0012	:=	S000B+2
 
 .segment	"BSS"
 
@@ -8654,7 +9148,7 @@ L004A:	rts
 ;
 	lda     _game_level
 	cmp     #$01
-	jne     L000C
+	jne     L0010
 ;
 ; add_enemy(&enemy1, 0x7000, 0x3400, 0x150, 0x0, LEFT, ENEMY_FIRE);
 ;
@@ -8773,10 +9267,10 @@ L004A:	rts
 ;
 ; else if (game_level == 2)
 ;
-	jmp     L000B
-L000C:	lda     _game_level
+	jmp     L000F
+L0010:	lda     _game_level
 	cmp     #$02
-	jne     L000D
+	jne     L0011
 ;
 ; add_enemy(&enemy1, 0x7000, 0x3400, 0x250, 0x0, LEFT, ENEMY_GLOUT);
 ;
@@ -8897,10 +9391,10 @@ L000C:	lda     _game_level
 ;
 ; else if (game_level == 3)
 ;
-	jmp     L000B
-L000D:	lda     _game_level
+	jmp     L000F
+L0011:	lda     _game_level
 	cmp     #$03
-	jne     L000E
+	jne     L0012
 ;
 ; add_enemy(&enemy1, 0x7000, 0x3400, 0x250, 0x0, LEFT, ENEMY_THORN);
 ;
@@ -9020,10 +9514,10 @@ L000D:	lda     _game_level
 ;
 ; else if (game_level == 4)
 ;
-	jmp     L000B
-L000E:	lda     _game_level
+	jmp     L000F
+L0012:	lda     _game_level
 	cmp     #$04
-	jne     L000F
+	jne     L0013
 ;
 ; add_enemy(&enemy1, 0x7000, 0x3400, 0x220, 0x0, LEFT, ENEMY_MUSH);
 ;
@@ -9141,10 +9635,127 @@ L000E:	lda     _game_level
 ;
 ; else if (game_level == 5)
 ;
-	jmp     L000B
-L000F:	lda     _game_level
+	jmp     L000F
+L0013:	lda     _game_level
 	cmp     #$05
-	jne     L0010
+	jne     L0014
+;
+; add_enemy(&enemy1, 0x5000, 0x5400, 0x0, 0x0, LEFT, ENEMY_FIRE);
+;
+	ldy     #$0B
+	jsr     subysp
+	lda     #<(_enemy1)
+	ldy     #$09
+	sta     (sp),y
+	iny
+	lda     #>(_enemy1)
+	sta     (sp),y
+	lda     #$00
+	ldy     #$07
+	sta     (sp),y
+	iny
+	lda     #$50
+	sta     (sp),y
+	lda     #$00
+	ldy     #$05
+	sta     (sp),y
+	iny
+	lda     #$54
+	sta     (sp),y
+	lda     #$00
+	ldy     #$03
+	sta     (sp),y
+	iny
+	sta     (sp),y
+	ldy     #$01
+	sta     (sp),y
+	iny
+	sta     (sp),y
+	lda     #$0B
+	ldy     #$00
+	sta     (sp),y
+	tya
+	jsr     _add_enemy
+;
+; add_enemy(&enemy2, 0x9000, 0x2400, 0x0, 0x0, LEFT, ENEMY_BEAR);
+;
+	ldy     #$0B
+	jsr     subysp
+	lda     #<(_enemy2)
+	ldy     #$09
+	sta     (sp),y
+	iny
+	lda     #>(_enemy2)
+	sta     (sp),y
+	lda     #$00
+	ldy     #$07
+	sta     (sp),y
+	iny
+	lda     #$90
+	sta     (sp),y
+	lda     #$00
+	ldy     #$05
+	sta     (sp),y
+	iny
+	lda     #$24
+	sta     (sp),y
+	lda     #$00
+	ldy     #$03
+	sta     (sp),y
+	iny
+	sta     (sp),y
+	ldy     #$01
+	sta     (sp),y
+	iny
+	sta     (sp),y
+	lda     #$0B
+	ldy     #$00
+	sta     (sp),y
+	lda     #$04
+	jsr     _add_enemy
+;
+; add_enemy(&enemy3, 0x7200, 0xA800, 0x0, 0x0, UP, ENEMY_FIRE);
+;
+	ldy     #$0B
+	jsr     subysp
+	lda     #<(_enemy3)
+	ldy     #$09
+	sta     (sp),y
+	iny
+	lda     #>(_enemy3)
+	sta     (sp),y
+	lda     #$00
+	ldy     #$07
+	sta     (sp),y
+	iny
+	lda     #$72
+	sta     (sp),y
+	lda     #$00
+	ldy     #$05
+	sta     (sp),y
+	iny
+	lda     #$A8
+	sta     (sp),y
+	lda     #$00
+	ldy     #$03
+	sta     (sp),y
+	iny
+	sta     (sp),y
+	ldy     #$01
+	sta     (sp),y
+	iny
+	sta     (sp),y
+	lda     #$01
+	ldy     #$00
+	sta     (sp),y
+	tya
+;
+; else if (game_level == 6)
+;
+	jmp     L000F
+L0014:	lda     _game_level
+	cmp     #$06
+	jne     L0015
 ;
 ; add_enemy(&enemy1, 0x2000, 0x6200, 0x150, 0x0, LEFT, ENEMY_OCTA);
 ;
@@ -9259,11 +9870,134 @@ L000F:	lda     _game_level
 	ldy     #$00
 	sta     (sp),y
 	tya
-L000B:	jsr     _add_enemy
+;
+; else if (game_level == 7)
+;
+	jmp     L000F
+L0015:	lda     _game_level
+	cmp     #$07
+	jne     L0016
+;
+; add_enemy(&enemy1, 0x2000, 0x6200, 0x150, 0x0, LEFT, ENEMY_GORILLA);
+;
+	ldy     #$0B
+	jsr     subysp
+	lda     #<(_enemy1)
+	ldy     #$09
+	sta     (sp),y
+	iny
+	lda     #>(_enemy1)
+	sta     (sp),y
+	lda     #$00
+	ldy     #$07
+	sta     (sp),y
+	iny
+	lda     #$20
+	sta     (sp),y
+	lda     #$00
+	ldy     #$05
+	sta     (sp),y
+	iny
+	lda     #$62
+	sta     (sp),y
+	lda     #$50
+	ldy     #$03
+	sta     (sp),y
+	iny
+	lda     #$01
+	sta     (sp),y
+	lda     #$00
+	ldy     #$01
+	sta     (sp),y
+	iny
+	sta     (sp),y
+	lda     #$0B
+	ldy     #$00
+	sta     (sp),y
+	lda     #$05
+	jsr     _add_enemy
+;
+; add_enemy(&enemy2, 0xB000, 0x6400, 0x0, 0x12C, DOWN, ENEMY_MUSH);
+;
+	ldy     #$0B
+	jsr     subysp
+	lda     #<(_enemy2)
+	ldy     #$09
+	sta     (sp),y
+	iny
+	lda     #>(_enemy2)
+	sta     (sp),y
+	lda     #$00
+	ldy     #$07
+	sta     (sp),y
+	iny
+	lda     #$B0
+	sta     (sp),y
+	lda     #$00
+	ldy     #$05
+	sta     (sp),y
+	iny
+	lda     #$64
+	sta     (sp),y
+	lda     #$00
+	ldy     #$03
+	sta     (sp),y
+	iny
+	sta     (sp),y
+	lda     #$2C
+	ldy     #$01
+	sta     (sp),y
+	iny
+	lda     #$01
+	sta     (sp),y
+	tya
+	ldy     #$00
+	sta     (sp),y
+	lda     #$0B
+	jsr     _add_enemy
+;
+; add_enemy(&enemy3, 0x4800, 0x9800, 0x110, 0x0, LEFT, ENEMY_PUP);
+;
+	ldy     #$0B
+	jsr     subysp
+	lda     #<(_enemy3)
+	ldy     #$09
+	sta     (sp),y
+	iny
+	lda     #>(_enemy3)
+	sta     (sp),y
+	lda     #$00
+	ldy     #$07
+	sta     (sp),y
+	iny
+	lda     #$48
+	sta     (sp),y
+	lda     #$00
+	ldy     #$05
+	sta     (sp),y
+	iny
+	lda     #$98
+	sta     (sp),y
+	lda     #$10
+	ldy     #$03
+	sta     (sp),y
+	iny
+	lda     #$01
+	sta     (sp),y
+	lda     #$00
+	ldy     #$01
+	sta     (sp),y
+	iny
+	sta     (sp),y
+	lda     #$0B
+	ldy     #$00
+	sta     (sp),y
+	lda     #$0A
+L000F:	jsr     _add_enemy
 ;
 ; enemy_item_count = enemy_index;
 ;
-L0010:	lda     _enemy_index
+L0016:	lda     _enemy_index
 	sta     _enemy_item_count
 ;
 ; }
@@ -10203,7 +10937,7 @@ L0012:	inc     _index
 ;
 	lda     _game_level
 	cmp     #$01
-	jne     L000C
+	jne     L0010
 ;
 ; add_collectable(&coin1, 0x2000, 0x2200, COLLECTABLE_COIN);
 ;
@@ -10332,10 +11066,10 @@ L0012:	inc     _index
 ;
 ; else if (game_level == 2)
 ;
-	jmp     L0010
-L000C:	lda     _game_level
+	jmp     L0016
+L0010:	lda     _game_level
 	cmp     #$02
-	jne     L000D
+	jne     L0011
 ;
 ; add_collectable(&coin1, 0x2000, 0x2000, COLLECTABLE_COIN);
 ;
@@ -10466,10 +11200,10 @@ L000C:	lda     _game_level
 ;
 ; else if (game_level == 3)
 ;
-	jmp     L0010
-L000D:	lda     _game_level
+	jmp     L0016
+L0011:	lda     _game_level
 	cmp     #$03
-	jne     L000E
+	jne     L0012
 ;
 ; add_collectable(&coin1, 0x2000, 0x1500, COLLECTABLE_COIN);
 ;
@@ -10584,10 +11318,10 @@ L000D:	lda     _game_level
 ;
 ; else if (game_level == 4)
 ;
-	jmp     L001D
-L000E:	lda     _game_level
+	jmp     L0023
+L0012:	lda     _game_level
 	cmp     #$04
-	jne     L000F
+	jne     L0013
 ;
 ; add_collectable(&coin1, 0x2000, 0x1500, COLLECTABLE_COIN);
 ;
@@ -10702,10 +11436,145 @@ L000E:	lda     _game_level
 ;
 ; else if (game_level == 5)
 ;
-	jmp     L001D
-L000F:	lda     _game_level
+	jmp     L0023
+L0013:	lda     _game_level
 	cmp     #$05
-	jne     L0010
+	jne     L0014
+;
+; add_collectable(&coin1, 0x4000, 0x1500, COLLECTABLE_COIN);
+;
+	jsr     decsp6
+	lda     #<(_coin1)
+	ldy     #$04
+	sta     (sp),y
+	iny
+	lda     #>(_coin1)
+	sta     (sp),y
+	lda     #$00
+	ldy     #$02
+	sta     (sp),y
+	iny
+	lda     #$40
+	sta     (sp),y
+	lda     #$00
+	tay
+	sta     (sp),y
+	iny
+	lda     #$15
+	sta     (sp),y
+	lda     #$00
+	jsr     _add_collectable
+;
+; add_collectable(&coin2, 0x6700, 0x2500, COLLECTABLE_COIN);
+;
+	jsr     decsp6
+	lda     #<(_coin2)
+	ldy     #$04
+	sta     (sp),y
+	iny
+	lda     #>(_coin2)
+	sta     (sp),y
+	lda     #$00
+	ldy     #$02
+	sta     (sp),y
+	iny
+	lda     #$67
+	sta     (sp),y
+	lda     #$00
+	tay
+	sta     (sp),y
+	iny
+	lda     #$25
+	sta     (sp),y
+	lda     #$00
+	jsr     _add_collectable
+;
+; add_collectable(&coin3, 0x8500, 0x7500, COLLECTABLE_COIN);
+;
+	jsr     decsp6
+	lda     #<(_coin3)
+	ldy     #$04
+	sta     (sp),y
+	iny
+	lda     #>(_coin3)
+	sta     (sp),y
+	lda     #$00
+	ldy     #$02
+	sta     (sp),y
+	iny
+	lda     #$85
+	sta     (sp),y
+	lda     #$00
+	tay
+	sta     (sp),y
+	iny
+	lda     #$75
+	sta     (sp),y
+	lda     #$00
+	jsr     _add_collectable
+;
+; add_collectable(&coin4, 0x4500, 0xC500, COLLECTABLE_COIN);
+;
+	jsr     decsp6
+	lda     #<(_coin4)
+	ldy     #$04
+	sta     (sp),y
+	iny
+	lda     #>(_coin4)
+	sta     (sp),y
+	lda     #$00
+	ldy     #$02
+	sta     (sp),y
+	iny
+	lda     #$45
+	sta     (sp),y
+	lda     #$00
+	tay
+	sta     (sp),y
+	iny
+	lda     #$C5
+	sta     (sp),y
+	lda     #$00
+	jsr     _add_collectable
+;
+; add_collectable(&coin5, 0x8F00, 0xD400, COLLECTABLE_COIN);
+;
+	jsr     decsp6
+	lda     #<(_coin5)
+	ldy     #$04
+	sta     (sp),y
+	iny
+	lda     #>(_coin5)
+	sta     (sp),y
+	lda     #$00
+	ldy     #$02
+	sta     (sp),y
+	iny
+	lda     #$8F
+	sta     (sp),y
+	lda     #$00
+	tay
+	sta     (sp),y
+	iny
+	lda     #$D4
+	sta     (sp),y
+	lda     #$00
+	jsr     _add_collectable
+;
+; max_coins = 5, max_lives = 3, max_stars = 0;
+;
+	lda     #$05
+	sta     _max_coins
+	lda     #$03
+	sta     _max_lives
+	lda     #$00
+;
+; else if (game_level == 6)
+;
+	jmp     L000F
+L0014:	lda     _game_level
+	cmp     #$06
+	jne     L0015
 ;
 ; add_collectable(&coin1, 0x3F00, 0xD400, COLLECTABLE_COIN);
 ;
@@ -10799,7 +11668,107 @@ L000F:	lda     _game_level
 	sta     (sp),y
 	iny
 	lda     #$68
+;
+; else if (game_level == 7)
+;
+	jmp     L0032
+L0015:	lda     _game_level
+	cmp     #$07
+	jne     L0016
+;
+; add_collectable(&coin1, 0x3F00, 0xE400, COLLECTABLE_COIN);
+;
+	jsr     decsp6
+	lda     #<(_coin1)
+	ldy     #$04
 	sta     (sp),y
+	iny
+	lda     #>(_coin1)
+	sta     (sp),y
+	lda     #$00
+	ldy     #$02
+	sta     (sp),y
+	iny
+	lda     #$3F
+	sta     (sp),y
+	lda     #$00
+	tay
+	sta     (sp),y
+	iny
+	lda     #$E4
+	sta     (sp),y
+	lda     #$00
+	jsr     _add_collectable
+;
+; add_collectable(&coin2, 0x1800, 0x3700, COLLECTABLE_COIN);
+;
+	jsr     decsp6
+	lda     #<(_coin2)
+	ldy     #$04
+	sta     (sp),y
+	iny
+	lda     #>(_coin2)
+	sta     (sp),y
+	lda     #$00
+	ldy     #$02
+	sta     (sp),y
+	iny
+	lda     #$18
+	sta     (sp),y
+	lda     #$00
+	tay
+	sta     (sp),y
+	iny
+	lda     #$37
+	sta     (sp),y
+	lda     #$00
+	jsr     _add_collectable
+;
+; add_collectable(&coin3, -0x1600, 0x4800, COLLECTABLE_COIN);
+;
+	jsr     decsp6
+	lda     #<(_coin3)
+	ldy     #$04
+	sta     (sp),y
+	iny
+	lda     #>(_coin3)
+	sta     (sp),y
+	lda     #$00
+	ldy     #$02
+	sta     (sp),y
+	iny
+	lda     #$EA
+	sta     (sp),y
+	lda     #$00
+	tay
+	sta     (sp),y
+	iny
+	lda     #$48
+	sta     (sp),y
+	lda     #$00
+	jsr     _add_collectable
+;
+; add_collectable(&life1, 0x5000, 0x2700, COLLECTABLE_LIFE);
+;
+	jsr     decsp6
+	lda     #<(_life1)
+	ldy     #$04
+	sta     (sp),y
+	iny
+	lda     #>(_life1)
+	sta     (sp),y
+	lda     #$00
+	ldy     #$02
+	sta     (sp),y
+	iny
+	lda     #$50
+	sta     (sp),y
+	lda     #$00
+	tay
+	sta     (sp),y
+	iny
+	lda     #$27
+L0032:	sta     (sp),y
 	lda     #$02
 	jsr     _add_collectable
 ;
@@ -10817,7 +11786,7 @@ L000F:	lda     _game_level
 	sta     (sp),y
 	iny
 	lda     #$99
-L001D:	sta     (sp),y
+L0023:	sta     (sp),y
 	lda     #$00
 	tay
 	sta     (sp),y
@@ -10833,11 +11802,11 @@ L001D:	sta     (sp),y
 	sta     _max_coins
 	lda     #$01
 	sta     _max_lives
-	sta     _max_stars
+L000F:	sta     _max_stars
 ;
 ; collectables_item_count = collectable_index;
 ;
-L0010:	lda     _collectable_index
+L0016:	lda     _collectable_index
 	sta     _collectables_item_count
 ;
 ; }
@@ -11016,7 +11985,7 @@ L0025:	jsr     _pal_col
 	lda     #$20
 L0018:	jsr     _pal_col
 ;
-; blink_cycle = (blink_cycle > 2) ? 0 : (blink_cycle+1);
+; blink_cycle = (blink_cycle > 2) ? 0 : (blink_cycle + 1);
 ;
 L001C:	lda     _blink_cycle
 	cmp     #$03
@@ -11454,8 +12423,8 @@ L000E:	ldy     #$01
 ;
 ; nes_text_hud("%c%c%0.2d%c%d    %c%c%0.2d    %c%c%0.2d    %c%c%0.5d\n", 0x6D, 0x25, coins, 0x23, max_coins, 0x2D, 0x25, lives, 0x21, 0x25, stars, 0x22, 0x25, score);
 ;
-	lda     #<(S0016)
-	ldx     #>(S0016)
+	lda     #<(S0017)
+	ldx     #>(S0017)
 	jsr     pushax
 	lda     #$6D
 	jsr     pusha0
@@ -11491,8 +12460,8 @@ L000E:	ldy     #$01
 ;
 ; nes_text_hud("%c", 0x7D);
 ;
-	lda     #<(S0017)
-	ldx     #>(S0017)
+	lda     #<(S0018)
+	ldx     #>(S0018)
 	jsr     pushax
 	lda     #$7D
 	jsr     pusha0
@@ -11585,7 +12554,7 @@ L000E:	ldy     #$01
 ;
 ; while (game_mode == MODE_TITLE)
 ;
-	jmp     L0043
+	jmp     L0045
 ;
 ; ppu_wait_nmi();
 ;
@@ -11674,7 +12643,7 @@ L000B:	lda     _menu_select
 ;
 ; else
 ;
-	jmp     L003F
+	jmp     L0041
 ;
 ; NES_GOTOXY(13, 18);
 ;
@@ -11722,7 +12691,7 @@ L000D:	tax
 ; game_mode = MODE_HELP;
 ;
 	lda     #$02
-L003F:	sta     _game_mode
+L0041:	sta     _game_mode
 ;
 ; nes_hud_update();
 ;
@@ -11767,7 +12736,7 @@ L000F:	lda     #$00
 ;
 	lda     _game_mode
 	cmp     #$01
-	bne     L0042
+	bne     L0044
 ;
 ; sfx_play(SFX_LIFE, 0);
 ;
@@ -11870,10 +12839,10 @@ L000F:	lda     #$00
 ;
 ; else if (game_mode == MODE_HELP)
 ;
-	jmp     L0043
-L0042:	lda     _game_mode
+	jmp     L0045
+L0044:	lda     _game_mode
 	cmp     #$02
-	bne     L0043
+	bne     L0045
 ;
 ; nes_fade_out();
 ;
@@ -11918,12 +12887,12 @@ L0042:	lda     _game_mode
 ;
 ; while (game_mode == MODE_TITLE)
 ;
-L0043:	lda     _game_mode
+L0045:	lda     _game_mode
 	jeq     L0005
 ;
 ; while (game_mode == MODE_GAME)
 ;
-	jmp     L004F
+	jmp     L0052
 ;
 ; ppu_wait_nmi();
 ;
@@ -11972,19 +12941,19 @@ L0015:	jsr     _ppu_wait_nmi
 	ldx     #$00
 	lda     _old_lives
 	cmp     _lives
-	bne     L0044
+	bne     L0046
 	lda     _old_stars
 	cmp     _stars
-	bne     L0044
+	bne     L0046
 	lda     _old_coins
 	cmp     _coins
-	bne     L0044
-	jmp     L0053
+	bne     L0046
+	jmp     L0049
 L0019:	ldx     #$00
 ;
 ; if (!half_dead_state && !invincible_state)
 ;
-L0044:	lda     _half_dead_state
+L0046:	lda     _half_dead_state
 	bne     L001B
 	lda     _invincible_state
 	bne     L001B
@@ -12016,33 +12985,18 @@ L001B:	lda     _score+1
 	lda     _coins
 	sta     _old_coins
 ;
-; if(NES_PAD1(PAD_B)){coins = max_coins; score = max_coins * 50;}    
-;
-L0053:	lda     #$00
-	jsr     _pad_poll
-	and     #$40
-	beq     L0048
-	lda     _max_coins
-	sta     _coins
-	lda     _max_coins
-	jsr     pusha0
-	lda     #$32
-	jsr     tosumula0
-	sta     _score
-	stx     _score+1
-;
 ; if (coins == max_coins && score > 0)
 ;
-L0048:	lda     _coins
+L0049:	lda     _coins
 	cmp     _max_coins
-	jne     L004C
+	jne     L004F
 	lda     _score
 	cmp     #$01
 	lda     _score+1
 	sbc     #$00
-	bvs     L0022
+	bvs     L0021
 	eor     #$80
-L0022:	jpl     L004C
+L0021:	jpl     L004F
 ;
 ; music_pause(TRUE);
 ;
@@ -12128,15 +13082,18 @@ L0022:	jpl     L004C
 	lda     #$00
 	sta     _invincible_state
 ;
-; if (lives == 1)
+; if (lives == 1 || game_level == 4)
 ;
 	lda     _lives
 	cmp     #$01
-	bne     L004B
+	beq     L004D
+	lda     _game_level
+	cmp     #$04
+	bne     L004E
 ;
 ; nes_hud_update();
 ;
-	jsr     _nes_hud_update
+L004D:	jsr     _nes_hud_update
 ;
 ; set_vram_update(update_list);
 ;
@@ -12156,9 +13113,9 @@ L0022:	jpl     L004C
 ;
 ; if (game_level < 3)
 ;
-L004B:	lda     _game_level
+L004E:	lda     _game_level
 	cmp     #$03
-	bcs     L0026
+	bcs     L0027
 ;
 ; pal_bg(palette_bg2);
 ;
@@ -12167,13 +13124,13 @@ L004B:	lda     _game_level
 ;
 ; else
 ;
-	jmp     L0057
+	jmp     L0059
 ;
 ; pal_bg(palette_bg3);
 ;
-L0026:	lda     #<(_palette_bg3)
+L0027:	lda     #<(_palette_bg3)
 	ldx     #>(_palette_bg3)
-L0057:	jsr     _pal_bg
+L0059:	jsr     _pal_bg
 ;
 ; pal_spr(palette_spr);
 ;
@@ -12242,9 +13199,43 @@ L0057:	jsr     _pal_bg
 	ldy     #$04
 	jsr     _nes_text_hud
 ;
+; if(game_level == 4){
+;
+	lda     _game_level
+	cmp     #$04
+	bne     L0029
+;
+; NES_GOTOXY(10, 8);
+;
+	ldx     #$00
+	lda     #$0A
+	sta     _xText
+	stx     _xText+1
+	lda     #$08
+	sta     _yText
+	stx     _yText+1
+;
+; nes_text_hud("BONUS LEVEL");
+;
+	lda     #<(S0011)
+	ldx     #>(S0011)
+	jsr     pushax
+	ldy     #$02
+	jsr     _nes_text_hud
+;
+; life_timer = 30;
+;
+	lda     #$1E
+	sta     _life_timer
+;
+; half_dead_state = TRUE;
+;
+	lda     #$01
+	sta     _half_dead_state
+;
 ; nes_hud_update();
 ;
-	jsr     _nes_hud_update
+L0029:	jsr     _nes_hud_update
 ;
 ; set_vram_update(update_list);
 ;
@@ -12263,7 +13254,7 @@ L0057:	jsr     _pal_bg
 ;
 ; ppu_wait_nmi();
 ;
-L0028:	jsr     _ppu_wait_nmi
+L002A:	jsr     _ppu_wait_nmi
 ;
 ; nes_fade_transition_fg();
 ;
@@ -12274,7 +13265,7 @@ L0028:	jsr     _ppu_wait_nmi
 	lda     #$00
 	jsr     _pad_poll
 	and     #$10
-	beq     L0028
+	beq     L002A
 ;
 ; nes_fade_in();
 ;
@@ -12306,7 +13297,7 @@ L0028:	jsr     _ppu_wait_nmi
 ;
 	lda     _game_level
 	cmp     #$04
-	bcs     L002C
+	bcs     L002E
 ;
 ; init_player(0x2FD0, 0xC200, 12, 8, RIGHT);
 ;
@@ -12333,11 +13324,11 @@ L0028:	jsr     _ppu_wait_nmi
 ;
 ; else
 ;
-	jmp     L0041
+	jmp     L0043
 ;
 ; init_player(-0x2FD0, 0xC200, 12, 8, LEFT);
 ;
-L002C:	jsr     decsp6
+L002E:	jsr     decsp6
 	lda     #$30
 	ldy     #$04
 	sta     (sp),y
@@ -12357,7 +13348,7 @@ L002C:	jsr     decsp6
 	dey
 	sta     (sp),y
 	lda     #$0B
-L0041:	jsr     _init_player
+L0043:	jsr     _init_player
 ;
 ; init_enemy();
 ;
@@ -12396,19 +13387,19 @@ L0041:	jsr     _init_player
 ;
 ; if (playerRobo.state == STATE_DEAD || lives == 0 || life_timer == 0 || game_level > MAX_LEVELS)
 ;
-L004C:	lda     _playerRobo+9
-	beq     L004D
+L004F:	lda     _playerRobo+9
+	beq     L0050
 	lda     _lives
-	beq     L004D
+	beq     L0050
 	lda     _life_timer
-	beq     L004D
+	beq     L0050
 	lda     _game_level
-	cmp     #$06
-	jcc     L0055
+	cmp     #$08
+	jcc     L0057
 ;
 ; game_mode = MODE_GAME_OVER;
 ;
-L004D:	lda     #$06
+L0050:	lda     #$06
 	sta     _game_mode
 ;
 ; sfx_play(SFX_DEAD, 0);
@@ -12424,8 +13415,8 @@ L004D:	lda     #$06
 ; if (game_level < MAX_LEVELS)
 ;
 	lda     _game_level
-	cmp     #$05
-	bcs     L0031
+	cmp     #$07
+	bcs     L0033
 ;
 ; oam_meta_spr(HIGH_BYTE(playerRobo.x), HIGH_BYTE(playerRobo.y), player_robo_spr_list[PLAYER_ANIM_DEAD]);
 ;
@@ -12447,7 +13438,7 @@ L004D:	lda     #$06
 ;
 ; nes_clear_nametable(NAMETABLE_A);
 ;
-L0031:	ldx     #$20
+L0033:	ldx     #$20
 	lda     #$00
 	jsr     _nes_clear_nametable
 ;
@@ -12485,8 +13476,8 @@ L0031:	ldx     #$20
 	sta     _xText+1
 	sta     _yText
 	sta     _yText+1
-	lda     #<(S0011)
-	ldx     #>(S0011)
+	lda     #<(S0012)
+	ldx     #>(S0012)
 	jsr     pushax
 	lda     #$77
 	jsr     pusha0
@@ -12502,8 +13493,8 @@ L0031:	ldx     #$20
 	lda     #$0D
 	sta     _yText
 	stx     _yText+1
-	lda     #<(S0012)
-	ldx     #>(S0012)
+	lda     #<(S0013)
+	ldx     #>(S0013)
 	jsr     pushax
 	lda     _total_score
 	ldx     _total_score+1
@@ -12520,8 +13511,8 @@ L0031:	ldx     #$20
 	lda     #$0F
 	sta     _yText
 	stx     _yText+1
-	lda     #<(S0013)
-	ldx     #>(S0013)
+	lda     #<(S0014)
+	ldx     #>(S0014)
 	jsr     pushax
 	lda     _total_coins
 	jsr     pusha0
@@ -12549,10 +13540,10 @@ L0031:	ldx     #$20
 ;
 ; if (NES_PAD1(PAD_START))
 ;
-L0055:	lda     #$00
+L0057:	lda     #$00
 	jsr     _pad_poll
 	and     #$10
-	beq     L004F
+	beq     L0052
 ;
 ; music_pause(TRUE);
 ;
@@ -12588,8 +13579,8 @@ L0055:	lda     #$00
 ;
 ; nes_text_hud("GAME PAUSED");
 ;
-	lda     #<(S0014)
-	ldx     #>(S0014)
+	lda     #<(S0015)
+	ldx     #>(S0015)
 	jsr     pushax
 	ldy     #$02
 	jsr     _nes_text_hud
@@ -12600,17 +13591,17 @@ L0055:	lda     #$00
 ;
 ; while (game_mode == MODE_GAME)
 ;
-L004F:	lda     _game_mode
+L0052:	lda     _game_mode
 	cmp     #$03
 	jeq     L0015
 ;
 ; while (game_mode == MODE_PAUSE)
 ;
-	jmp     L0050
+	jmp     L0053
 ;
 ; oam_clear();
 ;
-L0033:	jsr     _oam_clear
+L0035:	jsr     _oam_clear
 ;
 ; ppu_wait_nmi();
 ;
@@ -12625,7 +13616,7 @@ L0033:	jsr     _oam_clear
 	lda     #$00
 	jsr     _pad_poll
 	and     #$10
-	beq     L0050
+	beq     L0053
 ;
 ; sfx_play(SFX_PAUSE, 0);
 ;
@@ -12661,8 +13652,8 @@ L0033:	jsr     _oam_clear
 ;
 ; nes_text_hud("              ");
 ;
-	lda     #<(S0015)
-	ldx     #>(S0015)
+	lda     #<(S0016)
+	ldx     #>(S0016)
 	jsr     pushax
 	ldy     #$02
 	jsr     _nes_text_hud
@@ -12673,17 +13664,17 @@ L0033:	jsr     _oam_clear
 ;
 ; while (game_mode == MODE_PAUSE)
 ;
-L0050:	lda     _game_mode
+L0053:	lda     _game_mode
 	cmp     #$04
-	beq     L0033
+	beq     L0035
 ;
 ; while (game_mode == MODE_GAME_OVER || game_mode == MODE_HELP)
 ;
-	jmp     L0051
+	jmp     L0054
 ;
 ; ppu_wait_nmi();
 ;
-L0037:	jsr     _ppu_wait_nmi
+L0039:	jsr     _ppu_wait_nmi
 ;
 ; nes_fade_transition_fg();
 ;
@@ -12694,7 +13685,7 @@ L0037:	jsr     _ppu_wait_nmi
 	lda     #$00
 	jsr     _pad_poll
 	and     #$10
-	beq     L0051
+	beq     L0054
 ;
 ; game_mode = MODE_TITLE;
 ;
@@ -12753,16 +13744,16 @@ L0037:	jsr     _ppu_wait_nmi
 ;
 ; break;
 ;
-	jmp     L0043
+	jmp     L0045
 ;
 ; while (game_mode == MODE_GAME_OVER || game_mode == MODE_HELP)
 ;
-L0051:	lda     _game_mode
+L0054:	lda     _game_mode
 	cmp     #$06
-	beq     L0037
+	beq     L0039
 	cmp     #$02
-	beq     L0037
-	jmp     L0043
+	beq     L0039
+	jmp     L0045
 
 .endproc
 

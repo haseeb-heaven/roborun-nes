@@ -50,12 +50,33 @@ void init_collectables()
         add_collectable(&star1, 0x3F00, 0xD400, COLLECTABLE_STAR);
         max_coins = 3, max_lives = 1, max_stars = 1;
     }
+
     else if (game_level == 5)
+    {
+        add_collectable(&coin1, 0x4000, 0x1500, COLLECTABLE_COIN);
+        add_collectable(&coin2, 0x6700, 0x2500, COLLECTABLE_COIN);
+        add_collectable(&coin3, 0x8500, 0x7500, COLLECTABLE_COIN);
+        add_collectable(&coin4, 0x4500, 0xC500, COLLECTABLE_COIN);
+        add_collectable(&coin5, 0x8F00, 0xD400, COLLECTABLE_COIN);
+        max_coins = 5, max_lives = 3, max_stars = 0;
+    }
+
+    else if (game_level == 6)
     {
         add_collectable(&coin1, 0x3F00, 0xD400, COLLECTABLE_COIN);
         add_collectable(&coin2, 0x1800, 0x4700, COLLECTABLE_COIN);
         add_collectable(&coin3, 0x5000, 0x3700, COLLECTABLE_COIN);
         add_collectable(&life1, -0x1600, 0x6800, COLLECTABLE_LIFE);
+        add_collectable(&star1, 0x99A0, 0xD400, COLLECTABLE_STAR);
+        max_coins = 3, max_lives = 1, max_stars = 1;
+    }
+
+    else if (game_level == 7)
+    {
+        add_collectable(&coin1, 0x3F00, 0xE400, COLLECTABLE_COIN);
+        add_collectable(&coin2, 0x1800, 0x3700, COLLECTABLE_COIN);
+        add_collectable(&coin3, -0x1600, 0x4800, COLLECTABLE_COIN);
+        add_collectable(&life1, 0x5000, 0x2700, COLLECTABLE_LIFE);
         add_collectable(&star1, 0x99A0, 0xD400, COLLECTABLE_STAR);
         max_coins = 3, max_lives = 1, max_stars = 1;
     }
@@ -102,23 +123,20 @@ void check_invincible_state()
             {
                 pal_col(17, NES_COLOR_CYAN_BLUE);
                 pal_col(18, NES_COLOR_YELLOW);
-                //pal_col(19, NES_COLOR_PALE_ORANGE);
             }
 
             else if (blink_cycle == 1)
             {
                 pal_col(17, NES_COLOR_PALE_ORANGE);
                 pal_col(18, NES_COLOR_LIGHT_BLUE);
-                //pal_col(19, NES_COLOR_YELLOW);
             }
 
             else if (blink_cycle == 2)
             {
                 pal_col(17, NES_COLOR_AQUA);
                 pal_col(18, NES_COLOR_LIGHT_BLUE);
-                //pal_col(19, NES_COLOR_BLACK);
             }
-            blink_cycle = (blink_cycle > 2) ? 0 : (blink_cycle+1);
+            blink_cycle = (blink_cycle > 2) ? 0 : (blink_cycle + 1);
         }
 
         if (invincible_state && !half_dead_state && get_frame_count() % (1 << 5) == 0)

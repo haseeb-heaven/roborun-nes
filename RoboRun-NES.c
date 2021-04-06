@@ -13,6 +13,7 @@ Dated : 30-03-2021
 */
 
 //Include all game files.
+//#define DEBUG_MODE //For debugging levels.
 #include "src\game.h"
 
 void draw_sprites(void);
@@ -153,6 +154,11 @@ void main()
                 old_coins = coins;
             }
 
+
+            #ifdef DEBUG_MODE
+            if(NES_PAD1(PAD_B)){coins = max_coins; score = max_coins * 50;}
+            #endif
+
             //Player win state.
             if (coins == max_coins && score > 0)
             {
@@ -172,7 +178,7 @@ void main()
                 star_timer = STAR_TIMER_MAX;
                 invincible_state = FALSE;
 
-                if (lives == 1)
+                if (lives == 1 || game_level == 4)
                 {
                     nes_hud_update();
                     set_vram_update(update_list);
@@ -197,6 +203,15 @@ void main()
                 NES_GOTOXY(0, 1);nes_text_hud("%c", 0x77);
                 NES_GOTOXY(18, 13);nes_text_hud("%0.5d", score);
                 NES_GOTOXY(18, 15);nes_text_hud("%0.2d", lives);
+                
+                //Setup for bonus level.
+                if(game_level == 4){
+                NES_GOTOXY(10, 8);
+                nes_text_hud("BONUS LEVEL");
+                life_timer = 30;
+                half_dead_state = TRUE;
+                }
+
                 nes_hud_update();
                 set_vram_update(update_list);
                 music_play(SONG_LEVEL_CLEAR);

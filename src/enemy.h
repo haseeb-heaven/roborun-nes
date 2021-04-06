@@ -6,7 +6,7 @@ void bg_collision(GenericBase *);
 void bg_collision_x(GenericBase *);
 void enable_bg_collision(Player *, int, int);
 void bg_check_low(GenericBase);
-void add_enemy(Enemy *, int, int,signed int,signed int, uint8_t, uint8_t);
+void add_enemy(Enemy *, int, int, signed int, signed int, uint8_t, uint8_t);
 
 Enemy enemy1 = {NULL}, enemy2 = {NULL}, enemy3 = {NULL};
 
@@ -38,16 +38,30 @@ void init_enemy()
         add_enemy(&enemy2, 0xB000, 0x8400, 0x0, 0xE0, DOWN, ENEMY_BEAR);
         add_enemy(&enemy3, 0x5200, 0xC800, 0x0, 0x170, UP, ENEMY_BAT);
     }
+    //Level 5 is bonus level.
     else if (game_level == 5)
+    {
+        add_enemy(&enemy1, 0x5000, 0x5400, 0x0, 0x0, LEFT, ENEMY_FIRE);
+        add_enemy(&enemy2, 0x9000, 0x2400, 0x0, 0x0, LEFT, ENEMY_BEAR);
+        add_enemy(&enemy3, 0x7200, 0xA800, 0x0, 0x0, UP, ENEMY_FIRE);
+    }
+    else if (game_level == 6)
     {
         add_enemy(&enemy1, 0x2000, 0x6200, 0x150, 0x0, LEFT, ENEMY_OCTA);
         add_enemy(&enemy2, 0xB000, 0x8400, 0x0, 0x12C, DOWN, ENEMY_SWARS);
         add_enemy(&enemy3, 0x4800, 0x9800, 0x0, 0x110, UP, ENEMY_FIRE);
     }
+
+    else if (game_level == 7)
+    {
+        add_enemy(&enemy1, 0x2000, 0x6200, 0x150, 0x0, LEFT, ENEMY_GORILLA);
+        add_enemy(&enemy2, 0xB000, 0x6400, 0x0, 0x12C, DOWN, ENEMY_MUSH);
+        add_enemy(&enemy3, 0x4800, 0x9800, 0x110, 0x0, LEFT, ENEMY_PUP);
+    }
     enemy_item_count = enemy_index;
 }
 
-void add_enemy(Enemy *enemy, int x, int y,signed int vel_x,signed int vel_y, uint8_t direction, uint8_t type)
+void add_enemy(Enemy *enemy, int x, int y, signed int vel_x, signed int vel_y, uint8_t direction, uint8_t type)
 {
     enemy->x = x;
     enemy->y = y;

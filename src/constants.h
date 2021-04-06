@@ -13,7 +13,7 @@
 #define COLLECTABLE_HEIGHT 9
 #define TURN_OFF 0xFF
 #define MAX_ENEMY 5
-#define MAX_LEVELS 5
+#define MAX_LEVELS 7
 #define MAX_COLLECTABLES 5
 #define ANIM_FRAME_OFFSET 5
 #define LIFE_TIMER_MAX 30
@@ -137,7 +137,6 @@ enum SFX_TYPE
 	SFX_JUMP2,
 	SFX_WRONG,
 	SFX_HALF_DEAD,
-
 };
 
 #define COL_DOWN 0x80
