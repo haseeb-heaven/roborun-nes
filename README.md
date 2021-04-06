@@ -33,6 +33,9 @@ All libraries used are well documented.<br/>
 ## Final level : <br/>
 ![](https://github.com/haseeb-heaven/RoboRun-NES/blob/main/res/game_level_5.png?raw=true "")<br/>
 
+# RoboRun-NES gameplay on YouTube :
+[![](https://img.youtube.com/vi/52nVrLGUxf4/0.jpg)](https://www.youtube.com/watch?v=52nVrLGUxf4)
+
 ## Directory Structure :
 **build** - Contains final build of game along source code in assembly.<br/>
 **cfg** - Contains various configurations that can be used in different type of **NES** games .<br/>
@@ -106,3 +109,4 @@ If you think someone is missing from list then please create PR and expand this 
 
 **VERSION INFO :**<br/>
 RoboRun Version : V 1.0  Dated : 30/03/2021.<br/>
+RoboRun Version : V 1.1  Dated : 06/04/2021.<br/>
